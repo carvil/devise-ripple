@@ -7,6 +7,7 @@ So far, it is in a usable state *for me*, in the following environment:
  * gem 'rails', '3.0.0.beta4'
  * gem "ripple", :git => 'http://github.com/seancribbs/ripple.git', :ref => "4d9aa9"
  * gem 'devise', '1.1.rc2'
+ * gem "orm_adapter", :git => "git://github.com/samsm/orm_adapter.git"
 
 ### Usage
 
@@ -17,6 +18,7 @@ So far, it is in a usable state *for me*, in the following environment:
 
 ### Example User model
 
+    require 'orm_adapter/adapters/ripple'
     class User
       include Ripple::Document
 
